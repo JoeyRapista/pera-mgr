@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{url_for('home')}}"><i class="bi me-2 bi-cash-coin"></i> Expense<strong><span class="text-warning">Tracker</span></strong> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarColor01"> 
+        {% if current_user.is_authenticated %}
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="bi me-2 bi-file-bar-graph-fill"></i>Reports</a>
+            <div class="mb-2 dropdown-menu dropdown-menu-end">
+              <a class="dropdown-item" href="{{url_for('reports_pie_daily')}}"><i class="bi me-2 bi-pie-chart-fill"></i>Expenses (Daily)</a> 
+              <a class="dropdown-item" href="{{url_for('reports_pie_monthly')}}"><i class="bi me-2 bi-pie-chart-fill"></i>Expenses (Monthly)</a>    
+              <a class="dropdown-item" href="{{url_for('reports_line_monthly')}}"><i class="bi me-2 bi-bar-chart-fill"></i>Income : Expenses (Monthly)</a>   
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="bi me-2 bi-person-circle"></i>Account</a>
+            <div class="mb-2 dropdown-menu dropdown-menu-end"> 
+              <a class="dropdown-item" href="{{url_for('categories')}}"><i class="bi me-2 bi-bookmarks-fill"></i>Categories</a> 
+              <a class="dropdown-item" href="{{url_for('profile')}}"><i class="bi me-2 bi-person-fill"></i>Profile</a> 
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{{url_for('logout')}}"><i class="bi me-2 bi-box-arrow-right"></i>Logout</a>
+            </div>
+          </li>
+        </ul>  
+        {% endif %}
+      </div>
+    </div>
+  </nav>

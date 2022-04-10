@@ -1,0 +1,316 @@
+{% extends 'base.html' %} {% block content %}
+<h2 class="mt-3 mb-3">Categories</h2>
+<div class="row g-3 mb-3 mt-3">
+  <div class="shadow-lg p-3 col-md-3">
+    <h4>Income</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Salary & Wages</li>
+      <li>Self-employed income</li>
+      <li>Bonus</li>
+      <li>Tips</li>
+      <li>Tax refund</li>
+      <li>Gifts received</li>
+      <li>Alimony received</li>
+      <li>Child support received</li>
+      <li>Rental income</li>
+      <li>Dividend income</li>
+      <li>Interest earned</li>
+      <li>etc...</li>
+    </ul>
+  </div>
+  <div class="shadow-lg col-md-3">
+    <h4>Housing</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Mortgage/Rent</li>
+      <li>Homeowners association (HOA fees)</li>
+      <li>Homeowners insurance / Renters insurance</li>
+      <li>Home repairs / Maintenance</li>
+      <li>Home improvement</li>
+      <li>etc...</li>
+    </ul>
+  </div>
+  <div class="shadow-lg col-md-3">
+    <h4>Utilities</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Electricity</li>
+      <li>Landline / Home phone</li>
+      <li>Mobile phone</li>
+      <li>Home internet</li>
+      <li>Garbage</li>
+      <li>Water</li>
+      <li>Recycling</li>
+      <li>etc...</li>
+    </ul>
+  </div>
+  <div class="shadow-lg col-md-3">
+    <h4>Food</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Groceries</li>
+      <li>Fast food</li>
+      <li>Coffee shops</li>
+      <li>Breakfast</li>
+      <li>Lunch</li>
+      <li>Dinner</li>
+      <li>Drinks</li>
+      <li>Snacks</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Transportation</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Car payment / lease payments</li>
+      <li>Car insurance</li>
+      <li>Gas</li>
+      <li>Oil change</li>
+      <li>Maintenance / Repairs</li>
+      <li>Personal property taxes</li>
+      <li>Registration</li>
+      <li>Public transportation</li>
+      <li>Ride sharing (Uber, Lyft)</li>
+      <li>Tolls</li>
+      <li>Parking Fees</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Medical/Health</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Health insurance</li>
+      <li>Dental insurance</li>
+      <li>Vision insurance</li>
+      <li>Prescriptions / Medication</li>
+      <li>Doctor bills</li>
+      <li>Dentist visits</li>
+      <li>Hospital bills</li>
+      <li>Optometrist</li>
+      <li>Glasses, contacts</li>
+      <li>Chiropractor visits</li>
+      <li>Vitamins/Supplements</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Insurance</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Life insurance</li>
+      <li>Disability insurance</li>
+      <li>Long-term care insurance</li>
+      <li>Umbrella policy</li>
+      <li>Identity theft</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Kids</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Tuition</li>
+      <li>Daycare</li>
+      <li>Babysitter / Nanny</li>
+      <li>Diapers, formula – baby necessities</li>
+      <li>Summer camp</li>
+      <li>School or Extra-curricular activities</li>
+      <li>School supplies</li>
+      <li>School lunches</li>
+      <li>Lessons</li>
+      <li>Allowance</li>
+      <li>Toys</li>
+      <li>Kids discretionary spending</li>
+      <li>Child support</li>
+      <li>Kids clothing</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Pets</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Veterinarian visits</li>
+      <li>Pet food</li>
+      <li>Pet medication (i.e. flea shots, heart worm medication)</li>
+      <li>Pet toys/beds</li>
+      <li>Pet accessories (leash, collar, etc.)</li>
+      <li>Pet grooming</li>
+      <li>Pet insurance</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Subscriptions/Streaming Services</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Netflix/Hulu</li>
+      <li>Amazon Prime</li>
+      <li>Music (Spotify, Pandora)</li>
+      <li>Sports TV subscription (like ESPN or Fox Sports)</li>
+      <li>Software subscriptions</li>
+      <li>Magazines</li>
+      <li>Professional Society annual fees</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Clothing</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Work clothing</li>
+      <li>Athletic clothing</li>
+      <li>Leisure clothing</li>
+      <li>Alterations</li>
+      <li>Dry cleaning</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Personal Care</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Haircuts</li>
+      <li>Hair coloring</li>
+      <li>Hair products</li>
+      <li>Cosmetics</li>
+      <li>Nail salon</li>
+      <li>Eyebrows</li>
+      <li>Massages</li>
+      <li>Spa Services</li>
+      <li>Grooming</li>
+      <li>Gym Membership</li>
+      <li>Counseling/Therapy</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Personal Development</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Books</li>
+      <li>Personal coach</li>
+      <li>Self-improvement</li>
+      <li>Conferences</li>
+      <li>Online courses</li>
+      <li>In person courses</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Financial/Professional Fees</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Financial advisor</li>
+      <li>Lawyer / Attorney fees</li>
+      <li>Tax professional (CPA, online accounting firm)</li>
+      <li>Business consultant</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Recreation/Fun</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Movies</li>
+      <li>Concerts</li>
+      <li>Hobbies/Crafts</li>
+      <li>Hosting parties</li>
+      <li>Books</li>
+      <li>Entertainment</li>
+      <li>Sporting Events</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Travel</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Vacation</li>
+      <li>Trips to see family</li>
+      <li>Trips for weddings, bachelor/bachelorette parties</li>
+      <li>Souvenirs</li>
+      <li>Baggage fees</li>
+      <li>TSA Precheck or Global Entry</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Technology</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Mobile phone</li>
+      <li>Computer / Computer accessories</li>
+      <li>Speaker system</li>
+      <li>Wifi mesh system / Wifi extender</li>
+      <li>Smart home (Amazon Echo, Fire, Nest, Google)</li>
+      <li>Gaming system / Video games / Gaming accessories</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Gifts</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Family birthday gifts</li>
+      <li>Friend birthday gifts</li>
+      <li>Wedding/wedding shower gifts</li>
+      <li>Anniversary gifts</li>
+      <li>Baby/baby shower gifts</li>
+      <li>Teacher gifts</li>
+      <li>
+        Service person gifts (mail carrier, home service, personal assistant)
+      </li>
+      <li>Thank you gifts</li>
+      <li>Holiday gifts</li>
+      <li>Special occasions</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Charitable Giving</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Charity/Donations</li>
+      <li>Tithing</li>
+      <li>Religious</li>
+      <li>Community</li>
+      <li>Political</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Savings Goals / Investing</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>College savings</li>
+      <li>Retirement savings</li>
+      <li>New car savings</li>
+      <li>Health Savings Account/Plan</li>
+      <li>Emergency Fund</li>
+      <li>Brokerage investments</li>
+      <li>Traditional / Roth IRA</li>
+      <li>Down payment savings</li>
+    </ul>
+  </div>
+
+  <div class="shadow-lg col-md-3">
+    <h4>Debt Payments</h4>
+    <p>Examples are the following</p>
+    <ul>
+      <li>Credit card debt</li>
+      <li>Student loan debt</li>
+      <li>Medical debt</li>
+      <li>Personal loans</li>
+      <li>Auto loan payments</li>
+      <li>Back taxes</li>
+      <li>Past due bills</li>
+      <li>Alimony</li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}

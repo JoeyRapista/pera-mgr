@@ -1,0 +1,38 @@
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title" id="staticBackdropLabel">Transaction</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form method="POST" class="form-group">
+                {{ form.hidden_tag() }}
+                    <div class="mb-3">
+                        {{ form.category.label(for=category) }}   
+                        {{ form.category(class="form-select ", id="category")}}  
+                    </div> 
+                    <div class="mb-3">
+                        {{ form.description.label(for="description") }}   
+                        {{ form.description(class="form-control", id="description")}}    
+                    </div>  
+                    <div class="mb-3">
+                        {{ form.date.label(for="description") }}   
+                        {{ form.date(class="form-control", type="date", id="date")}}    
+                    </div> 
+                    <div class="mb-3">
+                        {{ form.amount.label(for="amount") }}   
+                        {{ form.amount(class="form-control", type="number", id="amount")}}    
+                    </div>   
+              
+        </div>
+        <div class="modal-footer"> 
+            {{ form.submit(class="btn btn-warning") }}
+        </div>
+    </form> 
+    </div>
+    </div>
+</div>
+<!-- Modal -->
+
